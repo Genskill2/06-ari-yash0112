@@ -44,15 +44,15 @@ float index=(4.71*((float)letters/words))+(0.5*((float)words/sentence))-21.43;
    if(ind<0 || ind==1)
       return "Kindergarden";
    if(ind==2)
-       return "First/Second Grade";
+      return "First/Second Grade";
    if(ind==3)
-     return "Third Grade";
+      return "Third Grade";
    if(ind==4)
       return "Fourth Grade";
    if(ind==5)
       return "Fifth Grade";
    if(ind==6)
-       return "Sixth grade";
+      return "Sixth grade";
    if(ind==7)
       return "Seventh Grade";
    if(ind==8)
