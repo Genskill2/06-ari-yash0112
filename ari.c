@@ -5,8 +5,7 @@
 #include <ctype.h>
 
 
-
-string ari(string s){
+     string ari(string s){
  int letters=0;
   for(int i=0; s[i]!='\0';i++)
   {
