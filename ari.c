@@ -82,5 +82,4 @@ string ari(string s){
    else
       return "error";
      
-
-     }
+}
