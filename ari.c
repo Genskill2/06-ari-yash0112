@@ -1,7 +1,9 @@
-#include<stdio.h>
-#include<cs50.h>
-#include<string.h>
-#include<ctype.h>
+#include <stdio.h>
+#include <assert.h>
+#include <string.h>
+#include <cs50.h>
+#include <ctype.h>
+
 
 string ari(string s){
  int letters=0;
@@ -10,7 +12,7 @@ string ari(string s){
      if(isalpha(s[i])!=0)
         letters++;
      }
-     printf("Letters %d\n", letters);
+
      
  int words=0;
  for(int i=0; s[i]!='\0';i++){
@@ -22,7 +24,7 @@ string ari(string s){
      i++;
      
   }}}
-  printf("Words %d\n", words);
+
   
   int sentence=0;
   for(int i=0; s[i]!='\0';i++){
@@ -31,12 +33,11 @@ string ari(string s){
      if(s[i]=='.' && s[i+1]=='\0')
      sentence++;
      }
-     printf("sentence %d\n", sentence);
+    
      
 float index=(4.71*((float)letters/words))+(0.5*((float)words/sentence))-21.43;
    int ind=index/1;
       ind++;
-    printf("%d\n", ind);
    if(ind<0 || ind==1)
       return "Kindergarden";
    if(ind==2)
