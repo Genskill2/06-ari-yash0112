@@ -61,11 +61,11 @@ float index=(4.71*((float)letters/words))+(0.5*((float)words/sentence))-21.43;
       return "Tenth Grade";
    if(ind==11)
       return "Eleventh Grade";
-      if(ind==12)
+   if(ind==12)
       return "Twelfth Grade";
-      if(ind==13)
+   if(ind==13)
       return "College student";
-      if(ind==14 || ind>14)
+   if(ind==14 || ind>14)
       return "Professor";
      
    
