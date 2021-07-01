@@ -6,13 +6,13 @@
 
 
 string ari(string s){
-   int letters=0;
+ int letters=0;
   for(int i=0; s[i]!='\0';i++)
   {
      if(isalpha(s[i])!=0)
         letters++;
      }
-    
+ 
      
  int words=0;
  for(int i=0; s[i]!='\0';i++){
@@ -24,16 +24,18 @@ string ari(string s){
      i++;
      
   }}}
- 
+  
   
   
 
   int sentence=0;
   for(int i=0; s[i]!='\0';i++){
-     if(s[i]=='.' ||s[i]=='?' || s[i]=='!')
+     if((s[i]=='.' ||s[i]=='?' || s[i]=='!') && s[i+1]==' ')
+     sentence++;
+     if(s[i]=='.' && s[i+1]=='\0')
      sentence++;
      }
-
+   
      
      
 float index=(4.71*((float)letters/words))+(0.5*((float)words/sentence))-21.43;
@@ -67,8 +69,7 @@ float index=(4.71*((float)letters/words))+(0.5*((float)words/sentence))-21.43;
       return "College student";
    if(ind==14 || ind>14)
       return "Professor";
-  else
-       return "Error";
+     
    
 
      }
