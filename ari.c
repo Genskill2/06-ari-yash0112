@@ -11,8 +11,7 @@ string ari(string s){
      if(isalpha(s[i])!=0)
         letters++;
      }
-
-     
+   
  int words=0;
  for(int i=0; s[i]!='\0';i++){
   if(s[i]==' ')
