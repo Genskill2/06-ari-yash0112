@@ -67,7 +67,8 @@ float index=(4.71*((float)letters/words))+(0.5*((float)words/sentence))-21.43;
       return "College student";
    if(ind==14 || ind>14)
       return "Professor";
-     
+  else
+       return "Error";
    
 
      }
