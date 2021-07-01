@@ -12,7 +12,7 @@ string ari(string s){
      if(isalpha(s[i])!=0)
         letters++;
      }
-     printf("Letters %d\n", letters);
+    
      
  int words=0;
  for(int i=0; s[i]!='\0';i++){
@@ -24,7 +24,7 @@ string ari(string s){
      i++;
      
   }}}
-  printf("Words %d\n", words);
+ 
   
   
 
@@ -33,7 +33,7 @@ string ari(string s){
      if(s[i]=='.' ||s[i]=='?' || s[i]=='!')
      sentence++;
      }
-     printf("sentence %d\n", sentence);
+
      
      
 float index=(4.71*((float)letters/words))+(0.5*((float)words/sentence))-21.43;
