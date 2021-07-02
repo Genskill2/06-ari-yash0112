@@ -6,14 +6,15 @@
 
 string ari(string s){
  int letters=0;
-  for(int i=0; s[i]!='\0';i++)
+  for(int i=0; i<strlen(s);i++)
   {
      if(isalpha(s[i])!=0)
         letters++;
      }
-   
+
+     
  int words=0;
- for(int i=0; i<strlen(s); i++){
+ for(int i=0; i<strlen(s);i++){
   if(s[i]==' ')
      words++;
   else{
@@ -25,15 +26,15 @@ string ari(string s){
 
   
   int sentence=0;
-  for(int i=0; s[i]!='\0';i++){
-     if(s[i]=='.' ||s[i]=='?' || s[i]=='!')
+  for(int i=0; i<strlen(s);i++){
+     if((s[i]=='.' ||s[i]=='?' || s[i]=='!') && s[i+1]==' ')
      sentence++;
-    if(s[i]=='.' && s[i+1]=='\0')
+     if(s[i]=='.' && s[i+1]=='\0')
      sentence++;
      }
     
      
- float index=(4.71*((float)letters/words))+(0.5*((float)words/sentence))-21.43;
+   float index=(4.71*((float)letters/words))+(0.5*((float)words/sentence))-21.43;
    int ind=index/1;
       ind++;
  if(ind<0 || ind==1)
@@ -82,8 +83,4 @@ string ari(string s){
      
 
      }
-     
-     
-
-
 
